@@ -20,7 +20,7 @@ def get_line(Name, SteamID, Role, DateFrom, DateTO):
         return f"\n//{Name} - Desde: {DateFrom} - Hasta: {DateTO}\nAdmin={SteamID}:{Role}\n"
     
 def create_admin_cfg_file():
-    DOC_ID = '1iqwjl8X6Eb_VgXFiKmzZT8d8NzCiFwhGfnRwacxuSZw'    
+    DOC_ID = 'xxxxxx' 
 
     sheet_url = build_sheet_url(DOC_ID)
     db_admins_and_users = pd.read_csv(sheet_url)
